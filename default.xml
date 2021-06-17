@@ -3,7 +3,7 @@
     <!-- Realme Trinket Organization Remote -->
     <remote name="rtrinket"
             fetch="ssh://git@github.com/realme-trinket-organization/"
-            revision="lineage-17.1" />
+            revision="lineage-18.1" />
 
     <project path="device/realme/sm6125-common" name="device_realme_sm6125-common" remote="rtrinket" />
     <project path="device/realme/RMX1911" name="device_realme_RMX1911" remote="rtrinket" />
