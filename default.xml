@@ -2,13 +2,23 @@
 <manifest>
     <!-- Realme Trinket Organization Remote -->
     <remote name="rtrinket"
-            fetch="ssh://git@github.com/realme-trinket-organization/"
-            revision="lineage-18.1" />
+        fetch="ssh://git@github.com/realme-trinket-organization/"
+        revision="lineage-19.1" />
+    
+    <!-- Caf Component -->
+    <remote name="mario"
+        fetch="https://github.com/ThankYouMario"
+        revision="sapphire" />
+    <remote name="aospa"
+        fetch="https://github.com/AOSPA"
+        revision="sapphire" />
 
-    <project path="device/realme/sm6125-common" name="device_realme_sm6125-common" remote="rtrinket" />
-    <project path="device/realme/RMX1911" name="device_realme_RMX1911" remote="rtrinket" />
-    <project path="device/realme/RMX2030" name="device_realme_RMX2030" remote="rtrinket" />
-    <project path="vendor/realme/sm6125-common" name="vendor_realme_sm6125-common" remote="rtrinket" />
-    <project path="vendor/realme/RMX1911" name="vendor_realme_RMX1911" remote="rtrinket" />
-    <project path="vendor/realme/RMX2030" name="vendor_realme_RMX2030" remote="rtrinket" />
+    <!-- Device Specific -->
+    <project path="device/realme/realme_trinket" name="device_realme_trinket" remote="rtrinket" />
+    <project path="kernel/realme/realme_trinket" name="kernel_realme_trinket" revision="devel" remote="rtrinket" />
+    <project path="vendor/realme/realme_trinket" name="vendor_realme_trinket" remote="rtrinket" />
+
+    <!-- Caf Component -->
+    <project name="android_device_qcom_common" path="device/qcom/common" remote="aospa" clone-depth="1" />
+    <project name="proprietary_vendor_qcom_common" path="vendor/qcom/common" remote="mario" clone-depth="1" />
 </manifest>
