@@ -4,21 +4,17 @@
     <remote name="rtrinket"
         fetch="ssh://git@github.com/realme-trinket-organization/"
         revision="lineage-19.1" />
-    
-    <!-- Caf Component -->
-    <remote name="mario"
-        fetch="https://github.com/ThankYouMario"
-        revision="sapphire" />
-    <remote name="aospa"
-        fetch="https://github.com/AOSPA"
-        revision="sapphire" />
+
+    <!-- GengKapak OSDN -->
+    <remote name="gk"
+        fetch="https://scm.osdn.net/gitroot/gengkapak"
+	revision="main" />
 
     <!-- Device Specific -->
     <project path="device/realme/realme_trinket" name="device_realme_trinket" remote="rtrinket" />
     <project path="kernel/realme/realme_trinket" name="kernel_realme_trinket" revision="devel" remote="rtrinket" />
     <project path="vendor/realme/realme_trinket" name="vendor_realme_trinket" remote="rtrinket" />
 
-    <!-- Caf Component -->
-    <project name="android_device_qcom_common" path="device/qcom/common" remote="aospa" clone-depth="1" />
-    <project name="proprietary_vendor_qcom_common" path="vendor/qcom/common" remote="mario" clone-depth="1" />
+    <!-- GengKapak Clang -->
+    <project name="clang-GengKapak" path="prebuilts/clang/host/linux-x86/gengkapak-clang" remote="gk" clone-depth="1" />
 </manifest>
