@@ -1,6 +1,6 @@
 # Download Android source with local_manifests
  Refer to http://source.android.com/source/downloading.html
 
- $ repo init -u https://github.com/LineageOS/android.git -b lineage-21.0 --git-lfs
- $ git clone https://github.com/realme-trinket-organization/local_manifests.git .repo/local_manifests -b lineage-21
+ $ repo init -u https://github.com/LineageOS/android.git -b lineage-20 --git-lfs
+ $ git clone https://github.com/realme-trinket-organization/local_manifests.git .repo/local_manifests -b lineage-20
  $ repo sync
